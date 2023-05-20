@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/soy3kge.css">
+    <link rel="stylesheet" href="donation.css">
+    <link rel="stylesheet" href="home.css">
+    <title>Donate Us</title>
+</head>
+<body>
+   <nav class="donation-navbar">
+    <p class="navbar-logo" onclick="window.location.href='index.html';">
+        The Green Trees Initiative
+    </p>
+   </nav> 
+
+   <!-- Payment Section -->
+   <section class="payment-section">
+       <h1 class="payment-title">
+            Give HOPE to those Who need It most
+       </h1>
+
+       <section class="payment-form">
+           <h1 class="info-text"> Your information </h1>
+           <form class="user-info">
+                <div class="first-name">
+                    <label for="firstname">FIRST NAME</label>
+                    <input type="text" id="firstname" placeholder="First name">
+                </div>
+
+                <div class="last-name">
+                    <label for="lastname">LAST NAME</label>
+                    <input type="text" id="lastname" placeholder="Last name">
+                </div>
+
+                <div class="address">
+                    <label for="street-address">STREET ADDRESS</label>
+                    <input type="text" id="street-address" placeholder="Street address">
+                </div>
+
+                <div class="city">
+                    <label for="city-name">CITY</label>
+                    <input type="text" id="city-name" placeholder="City">
+                </div>
+
+                <div class="states-zip">
+                    <div class="states">
+                        <label for="state-name">STATE</label>
+                        <select name="state" id="state-name">
+                            <option value="al">AL</option>
+                        </select>
+                    </div>
+    
+                    <div class="zip">
+                        <label for="zip-code">ZIP CODE</label>
+                        <input type="text" id="zip-code" placeholder="Zip">
+                    </div>
+                </div>
+
+                <div class="email-id">
+                    <label for="email-address">EMAIL ADDRESS</label>
+                    <input type="email" id="email-address" placeholder="Email address">
+                </div>
+           </form>
+
+           <h1 class="payment-info-text"> Payment information </h1>
+           <form class="payment-info">
+                <div class="card-num">
+                    <label for="card-number">CREDIT CARD NUMBER</label>
+                <input type="text" id="card-number" placeholder="Credit card number">
+                </div>
+
+                <div class="expiry-date">
+                    <label for="expiration">EXPIRATION DATE</label>
+                    <div class="expiry-fields">
+                        <input type="text" id="expiration" placeholder="MM">
+                        <input type="text" placeholder="YYYY">
+                    </div>
+                </div>
+
+                <div class="cvc">
+                    <label for="security-code">SECURITY CODE</label>
+                    <input type="text" placeholder="CVC">
+                </div>
+           </form>
+
+           <section class="process-payment">
+                <h3 class="form-bottom-text">
+                    Click the button to confirm your 
+                    donation of $10, recurring monthly.
+                </h3>
+
+                <button class="process-btn">
+                    Process Payment
+                </button>
+
+                <a href="./index.html" class="go-back-link">Go back</a>
+           </section>
+       </section>
+   </section>
+
+
+   <!-- Footer Section -->
+   <footer>
+        <div class="footer-text">The Green Trees Initiative</div>
+        <div class="contact-us">
+            <p>CONTACT US</p>
+            <p>123 Anywhere St. Cityname, NY 11206 (123) 456-7890 contact@npo.org</p>
+        </div>
+
+        <div class="follow-us">
+            <p>FOLLOW US</p>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">Medium</a>
+        </div>
+
+        <div class="learn-more">
+            <P>LEARN MORE</P>
+            <a href="#">The issue</a>
+            <a href="#">How we help</a>
+            <a href="#">Get involved</a>
+            <a href="#">Latest news</a>
+        </div>
+
+        <div class="footer-slogan">
+            #STOP CLIMATE CHANGE
+        </div>
+    </footer>
+</body>
+</html>

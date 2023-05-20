@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.donation-navbar {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar-logo {
+    width: 7.875rem;
+    height: 2.5rem;
+    font: normal normal bold 18px/22px Helvetica;
+    color: #354463;
+}
+
+.payment-section {
+    height: 70rem;
+    background-image: url('assets2/assets/donation/annie-spratt-427340-unsplash.png');
+    background-size: cover;
+    opacity: 1;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+.payment-title {
+    width: 19.5rem;
+    font: normal normal normal 32px/46px flood-std;
+    color: white;
+    justify-self: center;
+    margin-top: 2rem;
+}
+
+.payment-form {
+    width: 25rem;
+    height: 95%;
+    justify-self: center;
+    background: #354463;
+    color: white;
+    padding: 2rem;
+}
+
+.info-text {
+    font: normal normal bold 22px/28px Helvetica;
+}
+
+.user-info, .payment-info {
+    font: normal normal normal 11px/13px Helvetica;
+    letter-spacing: 0.44px;
+    color: #FFFFFF;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.user-info div, .payment-info div {
+    margin-top: 1.43rem;
+}
+
+.user-info label, .user-info input {
+    display: block;
+}
+
+.user-info div > label, .payment-info div > label {
+    width: 5rem;
+}
+
+.user-info div > input, .payment-info div > input{
+    width: 90%;
+    padding: 0.4rem 0;
+    font: normal normal 300 16px/24px Helvetica;
+    background: #354463;
+    color: white;
+    border: none;
+    border-bottom: 2px solid #C1F7D5;
+}
+
+.user-info div > input:focus, .payment-info div > input:focus {
+    outline: none;
+}
+
+.user-info .address label, .user-info .email-id label {
+    width: 6.87rem;
+}
+
+.user-info .address input, .user-info .email-id input {
+    width: 97%;
+}
+
+.address {
+    grid-column: span 2;
+}
+
+.address > label {
+    width: unset;
+    width: 120px;
+}
+
+.states-zip {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.states-zip > div {
+    margin-top: 0;
+}
+
+.states > select{
+    width: 3.43rem;
+    background: #354463;
+    color: #C1F7D5;
+    background: none;
+    font: normal normal 300 16px/24px Helvetica;
+    border: none;
+    padding: 0.55rem 0;
+    border-bottom: 2px solid #C1F7D5;
+}
+
+.states > select:focus {
+    outline: none;
+}
+
+.email-id {
+    grid-column: span 2;
+}
+
+.payment-info {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card-num {
+    grid-column: span 2;
+}
+
+.payment-info .card-num input {
+    width: 98%;
+}
+
+.expiry-date {
+    grid-row-start: 2;
+}
+
+.cvc {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+.payment-info-text {
+    font: normal normal bold 22px/28px Helvetica;
+    margin-top: 3.43rem;
+}
+
+.payment-info .expiry-date .expiry-fields {
+    margin-top: 0;
+}
+
+.payment-info .expiry-date .expiry-fields input:nth-of-type(1) {
+    margin-top: 0;
+    width: 2.8rem;
+}
+
+.payment-info .expiry-date .expiry-fields input:nth-of-type(2) {
+    margin-left: 0.625rem;
+    width: 3rem;
+}
+
+.form-bottom-text {
+    width: 15.5rem;
+    margin-top: 3.5rem;
+    font: normal normal bold 18px/22px Helvetica;
+}
+
+.process-btn {
+    width: 15.56rem;
+    height: 3.06rem;
+    margin-top: 1rem;
+    background: #C1F7D5;
+    color: #354463;
+    border: none;
+    border-radius: 100px;
+    font: normal normal bold 16px/20px Helvetica;
+}
+.process-payment {
+    display: grid;
+    grid-template-rows: repeat(3, 0.5fr);
+}
+
+.process-btn {
+    margin-top: 2rem;
+    justify-self: center;
+}
+
+.process-btn:hover {
+    cursor: pointer;
+}
+
+.go-back-link {
+    color: #C1F7D5;
+    font: normal normal 300 14px/24px Helvetica;
+}
+
+/* media queries */
+
+/* Smaller mobile devices */
+@media screen and (max-width: 450px) {
+
+    .payment-form {
+        width: 22rem;
+    }
+}
+
+/* Tablet version */
+
+@media screen and (min-width: 768px) {
+    
+    .donation-navbar {
+        height: 7rem;
+    }
+
+    .navbar-logo {
+        width: 10rem;
+        height: 3.125rem;
+        font: normal normal bold 22px/28px Helvetica;
+    }
+
+    .payment-title {
+        width: 32rem;
+        font: normal normal normal 44px/46px flood-std;
+    }
+
+    .payment-form {
+        width: 40rem;
+        font: normal normal bold 28px/36px Helvetica;
+    }
+
+    .user-info .states-zip {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .user-info .states-zip .states > select {
+        width: 80%;
+    }
+
+    .process-payment {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 0.5fr 1fr;   
+    }
+
+    .form-bottom-text {
+        grid-column: span 2;
+        width: 32rem;
+        font: normal normal bold 28px/36px Helvetica;
+    }
+
+    .process-btn {
+        grid-row: 2;
+        grid-column: 2;
+        width: 16rem;
+        height: 3.5rem;
+    }
+
+    .go-back-link {
+        grid-row: 2;
+        grid-column: 1;
+        align-self: center;
+        font: normal normal 300 16px/56px Helvetica;
+    }
+}
+
+
+
+/* media queries */
+/* Desktop version */
+
+@media screen and (min-width: 1440px) {
+    
+    .donation-navbar {
+        height: 8.125rem;
+    }
+
+    .navbar-logo {
+        width: 12.5rem;
+        font: normal normal bold 28px/36px Helvetica;
+    }
+
+    .payment-section {
+        grid-template-rows: 1fr;
+        grid-template-columns: 2fr 1fr;
+        padding-top: 3rem;
+    }
+
+    .payment-title {
+        margin-top: 0;
+        grid-column: 2;
+    }
+
+    .payment-form {
+        grid-row: 1;
+        grid-column: 1;
+    }
+}
